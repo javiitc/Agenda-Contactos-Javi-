@@ -24,19 +24,19 @@ public class Main {
 
             switch (seleccion) {
                 case 1:
-                    metodo.mostrarContactos();
+                    metodo.mostrarContactos(contactos, numeroContactos);
                     break;
 
                 case 2:
-                    metodo.agregarContacto();
+                    metodo.agregarContacto(sc, contactos, posicionContacto, numeroContactos);
                     break;
 
                 case 3:
-                    metodo.editarContacto();
+                    metodo.editarContacto(contactos, numeroContactos, sc);
                     break;
 
                 case 4:
-                    metodo.buscarContacto();
+                    metodo.buscarContacto(contactos, numeroContactos, sc);
                     break;
                 case 5:
                     System.exit(0);

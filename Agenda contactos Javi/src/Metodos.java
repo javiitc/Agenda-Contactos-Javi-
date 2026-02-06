@@ -26,7 +26,7 @@ public class Metodos {
         posicionContacto++;
     }
 
-    public void editarContacto (String contactos [], int numeroContactos [], int seleccionContacto, int modificar, Scanner sc) {
+    public void editarContacto (String contactos [], int numeroContactos [], Scanner sc) {
 
         System.out.println("Selecciona el contacto que quieres editar");
         System.out.println("------------------------------------------");
@@ -42,20 +42,18 @@ public class Metodos {
 
         }
 
-        seleccionContacto = sc.nextInt();
+        int seleccionContacto = sc.nextInt();
 
         System.out.println("Que deseas modificar de " + contactos[seleccionContacto - 1] + "?");
         System.out.println("1. Nombre");
         System.out.println("2. Numero de Telefono");
-        modificar = sc.nextInt();
+        int modificar = sc.nextInt();
         switch (modificar) {
             case 1:
-
                 System.out.println("Introduce el nuevo nombre para guardar el contacto: ");
                 contactos [seleccionContacto - 1] = sc.next();
                 break;
             case 2:
-
                 System.out.println("Introduce el nuevo numero de telefono: ");
                 numeroContactos [seleccionContacto -1 ] = sc.nextInt();
                 break;
