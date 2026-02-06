@@ -71,7 +71,9 @@ public class Metodos {
         for (int i = 0; i < contactos.length; i++) {
             if (busqueda.equalsIgnoreCase(contactos[i])) {
                 System.out.println(contactos[i]);
-                System.out.println(";
+                System.out.println("Teléfono: " + numeroContactos[i]);
+            } else {
+                System.out.println("No hay ningún resultado");
             }
         }
 
