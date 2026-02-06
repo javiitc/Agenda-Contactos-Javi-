@@ -61,4 +61,19 @@ public class Metodos {
                 break;
         }
     }
+
+    public void buscarContacto (String contactos [], int numeroContactos [], Scanner sc) {
+
+        System.out.println("Introduce el nombre:");
+
+        String busqueda = sc.next();
+
+        for (int i = 0; i < contactos.length; i++) {
+            if (busqueda.equalsIgnoreCase(contactos[i])) {
+                System.out.println(contactos[i]);
+                System.out.println(";
+            }
+        }
+
+    }
 }
